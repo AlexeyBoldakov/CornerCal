@@ -536,7 +536,7 @@ IA
                                                 <constraint firstAttribute="width" constant="270" id="DEq-UM-3Il"/>
                                             </constraints>
                                         </progressIndicator>
-                                        <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d1U-eY-zwo">
+                                        <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d1U-eY-zwo" customClass="Button" customModule="StatusCal" customModuleProvider="target">
                                             <rect key="frame" x="129" y="267" width="150" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="NNZ-pb-FSC"/>
@@ -546,22 +546,27 @@ IA
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="loadClicked:" target="QfE-So-YrH" id="0RF-64-a7N"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mny-zp-l4Q">
-                                            <rect key="frame" x="177" y="317" width="53" height="19"/>
+                                            <rect key="frame" x="180" y="317" width="48" height="19"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="i98-Ip-Mic"/>
                                             </constraints>
-                                            <textFieldCell key="cell" alignment="center" title="Дфые" id="XKd-Tw-xu9">
+                                            <textFieldCell key="cell" alignment="center" title="Label" id="XKd-Tw-xu9">
                                                 <font key="font" metaFont="systemBold" size="15"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fJf-hi-Ydj">
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fJf-hi-Ydj" customClass="Button" customModule="StatusCal" customModuleProvider="target">
                                             <rect key="frame" x="139" y="67" width="130" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="mf0-yp-sba"/>
@@ -571,6 +576,11 @@ IA
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="checkForUpdatesClicked:" target="QfE-So-YrH" id="FXD-Zk-biR"/>
                                             </connections>
@@ -628,7 +638,7 @@ IA
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yTj-XH-euU">
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yTj-XH-euU" customClass="Button" customModule="StatusCal" customModuleProvider="target">
                                             <rect key="frame" x="139" y="197" width="130" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="Wvh-Cu-uQv"/>
@@ -638,11 +648,16 @@ IA
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="projectClicked:" target="FuT-Xg-5LR" id="cY3-xD-xWB"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="trh-he-tBf">
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="trh-he-tBf" customClass="Button" customModule="StatusCal" customModuleProvider="target">
                                             <rect key="frame" x="139" y="145" width="130" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="2xg-QC-gWB"/>
@@ -653,11 +668,16 @@ IA
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <color key="contentTintColor" name="linkColor" catalog="System" colorSpace="catalog"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="termsClicked:" target="FuT-Xg-5LR" id="iPs-e0-GH3"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P1M-m2-T0Q">
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P1M-m2-T0Q" customClass="Button" customModule="StatusCal" customModuleProvider="target">
                                             <rect key="frame" x="139" y="93" width="130" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="Hnm-eZ-sdv"/>
@@ -668,6 +688,11 @@ IA
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <color key="contentTintColor" name="linkColor" catalog="System" colorSpace="catalog"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                             <connections>
                                                 <action selector="privacyClicked:" target="FuT-Xg-5LR" id="8Ly-kM-XYR"/>
                                             </connections>

@@ -17,7 +17,8 @@ class UpdatesTabViewItem: NSTabViewItem {
     
     @IBOutlet weak var ckeckStatusMessage: NSTextField! {
         didSet {
-            
+            let lastCheckDate = defaultsManager.getString(forKey: defaultsManager.keys.LAST_UPDATE_CHECK_DATE)
+            ckeckStatusMessage.stringValue = "updates.checking.lastcheckdate".localized + lastCheckDate
         }
     }
     
@@ -72,6 +73,9 @@ class UpdatesTabViewItem: NSTabViewItem {
             let currentVersion = Float(current)
             
             if let lastVersion = version?.lastVersion, let currentVersion = currentVersion {
+                
+                self.defaultsManager.setString(Date.getLocalDateTime(by: "ddMMMMyyyy HH:mm"), forKey: self.defaultsManager.keys.LAST_UPDATE_CHECK_DATE)
+            
                 if currentVersion < lastVersion {
                     self.state = .newVersionAvailable
                 } else {
@@ -94,7 +98,6 @@ class UpdatesTabViewItem: NSTabViewItem {
     
     private func showLoadingState() {
         DispatchQueue.main.async {
-            self.ckeckStatusMessage.stringValue = NSLocalizedString("updates.checking.message", comment: "")
             self.ckeckStatusMessage.stringValue = "updates.checking.message".localized
             self.loadButton.isHidden = true
             self.progressBar.startAnimation(nil)

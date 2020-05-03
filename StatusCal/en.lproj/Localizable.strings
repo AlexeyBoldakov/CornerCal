@@ -11,3 +11,4 @@
 "updates.checking.message" = "Checking for updates...";
 "updates.checking.available" = "New version is available now!";
 "updates.checking.newest" = "Сurrent version is the newest";
+"updates.checking.lastcheckdate" = "Last check ";

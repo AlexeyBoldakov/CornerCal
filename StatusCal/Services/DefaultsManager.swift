@@ -73,4 +73,12 @@ class DefaultsManager {
     func setAny(_ value: Any, forKey: String) {
         defaults.set(value, forKey: forKey)
     }
+    
+    func setString(_ value: String, forKey: String) {
+        defaults.set(value, forKey: forKey)
+    }
+    
+    func getString(forKey: String) -> String {
+        return defaults.string(forKey: forKey) ?? ""
+    }
 }

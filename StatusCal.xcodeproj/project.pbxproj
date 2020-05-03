@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0A7292245EA99F0034F408 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A7291245EA99F0034F408 /* Date.swift */; };
 		1E0E5BC32453667600D34828 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E5BC22453667600D34828 /* String.swift */; };
 		1E0E5BCD2453682900D34828 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1E0E5BCF2453682900D34828 /* Localizable.strings */; };
 		1E9130EB2451FA8500667106 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9130EA2451FA8500667106 /* NetworkManager.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E0A7291245EA99F0034F408 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		1E0E5BC22453667600D34828 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		1E0E5BCE2453682900D34828 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1E0E5BD02453682D00D34828 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				1E0E5BC22453667600D34828 /* String.swift */,
 				1EC46D5824548BD00015ABB5 /* Bundle.swift */,
+				1E0A7291245EA99F0034F408 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				1EEDB2E8245ABC3800E48BF1 /* AboutTabViewItem.swift in Sources */,
 				1E9130EB2451FA8500667106 /* NetworkManager.swift in Sources */,
 				1EB5FCB0244F3C2B00311991 /* CheckboxCell.swift in Sources */,
+				1E0A7292245EA99F0034F408 /* Date.swift in Sources */,
 				1EF722002450D28F00545E18 /* Constants.swift in Sources */,
 				1EB5FCB2244F485F00311991 /* CalendarManager.swift in Sources */,
 				229D07C31F78709A00A22E37 /* CalendarDayItem.swift in Sources */,
